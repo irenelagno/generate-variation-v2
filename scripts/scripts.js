@@ -76,6 +76,11 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  if (document.querySelector('helix-sidekick')) {
+    await import('../tools/sidekick/plugins.js');
+  } else {
+    document.addEventListener('helix-sidekick-ready', () => import('../tools/sidekick/plugins.js'), { once: true });
+  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

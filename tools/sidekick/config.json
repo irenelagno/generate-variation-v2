@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    {
+      "id": "aem-generate-variations",
+      "titleI18n": {
+        "en": "AEM Generate Variations"
+      },
+      "isPalette": true,
+      "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width: 800px; height: calc(100vh - 60px)",
+      "environments": [
+        "preview"
+      ],
+      "includePaths": [
+        "**.docx**"
+      ],
+      "passConfig": true,
+      "passReferrer": true,
+      "event": "aem-generate-variations-plugin",
+      "url": "https://245265-879aquaant-serhiiplayground.adobeio-static.net/index.html?aemSidekick=true"
+    }
+  ]
+}
